@@ -1,0 +1,221 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans Japanese";
+}
+
+header{
+  background-image: url('img/Bromo.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: right center;
+  height: 700px;
+}
+
+/* @font-face定義 */
+@font-face {
+  font-family: 'はれのそら明朝';
+  src: url('font/Harenosora.otf') format('opentype');
+}
+
+/* class指定 */
+.harenohi{
+  font-family: 'はれのそら明朝';
+}
+
+.header-content{
+  width: 75%;
+  height: 700px;
+  margin: 0;
+}
+
+/* Uses Flexbox to align text vertically */
+.title-container {
+  width: 70%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 300px;
+  z-index: 10;
+  margin-top: 50px;
+  letter-spacing: 0.8em;
+}
+
+h1.title{
+  font-size: 3em;
+  line-height: 1;
+  color: #fff;
+  margin-bottom: 0;
+  margin-left: 50px;
+}
+
+h1.large{
+  font-size: 8em;
+  font-weight: bold;
+  font-family: 'Dancing Script', cursive;
+  letter-spacing: 0.1em;
+}
+
+.header-desc {
+  width: 50%;
+  height: 200px;
+  margin: 0 auto;
+  font-size: 1.2em;
+  color: #fff;
+  text-align: center;
+  /*font-family: "Sawarabi Gothic", sans-serif;*/
+  font-family: "Noto Sans Japanese";
+  position: absolute;
+  left: 25%;
+  top: 60%;
+  letter-spacing: 0.1em;
+  line-height: 2em;
+  font-weight: lighter !important;
+}
+
+.myButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #fff6af;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #fff6af;
+	box-shadow:inset 0px 1px 0px 0px #fff6af;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23));
+	background:-moz-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-o-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-ms-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23',GradientType=0);
+	background-color:#ffec64;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family: "Noto Sans Japanese";
+  font-weight: lighter !important;
+	font-size:1.2em;
+	padding:10px 30px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64));
+	background:-moz-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-webkit-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-o-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-ms-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64',GradientType=0);
+	background-color:#ffab23;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.content {
+  width: 100%;
+  clear: both;
+  margin: 50px 0;
+}
+
+#map {
+  clear: both;
+  background-image: url("img/bluedot.jpg");
+  background-repeat: repeat;
+}
+
+.content-text{
+  width: 40%;
+  margin: 30px auto;
+  text-align: center;
+  font-size: 1em;
+}
+
+.content-text h2{
+
+}
+
+.content-text p{
+
+}
+
+/* 1 column: 320px */
+.autowide {
+  margin: 0 auto;
+	width: 96%;
+}
+
+.autowide .col {
+  /*background-color: lightgrey;
+  border-radius: .25rem;*/
+  margin-bottom: 2rem;
+}
+
+.autowide .col img {
+  width: 100%;
+}
+
+.autowide .col h3{
+  text-align: center;
+  margin: 0;
+}
+
+.autowide .col p {
+  text-align: center;
+  padding: 0 1.25rem;
+}
+
+/* 2 columns: 600px */
+@media only screen and (min-width: 600px) {
+  .autowide .col {
+		float: left;
+		margin-right: 2.564102564102564%;
+		width: 48.717948717948715%;
+	}
+	.autowide .col:nth-child(2n+0) {
+		margin-right: 0;
+	}
+}
+
+/* 3 columns: 768px */
+@media only screen and (min-width: 768px) {
+  .autowide .col {
+		width: 31.623931623931625%;
+	}
+	.autowide .col:nth-child(2n+0) {
+		margin-right: 2.564102564102564%;
+	}
+	.autowide .col:nth-child(3n+0) {
+		margin-right: 0;
+	}
+}
+
+/* 4 columns: 992px and up */
+@media only screen and (min-width: 992px) {
+  .autowide .col {
+		width: 23.076923076923077%;
+	}
+	.autowide .col:nth-child(3n+0) {
+		margin-right: 2.564102564102564%;
+	}
+	.autowide .col:nth-child(4n+0) {
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 850px) {
+  .title {
+    font-size: 3em !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .title-container {
+    width: 70% !important;
+  }
+}
