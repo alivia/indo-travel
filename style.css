@@ -5,7 +5,7 @@ body{
 }
 
 header{
-  background-image: url('img/Bromo.jpg');
+  background-image: url('img/Bromo2.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -125,8 +125,6 @@ h1.large{
 
 #map {
   clear: both;
-  background-image: url("img/bluedot.jpg");
-  background-repeat: repeat;
 }
 
 .content-text{
@@ -168,6 +166,71 @@ h1.large{
 .autowide .col p {
   text-align: center;
   padding: 0 1.25rem;
+}
+
+
+#plan {
+  width: 100%;
+  background-image: url('img/hip-square.png');
+}
+#plan section {
+  min-height: 100px;
+  overflow: hidden;
+}
+section {
+  position: relative;
+}
+#plan section .illust {
+  width: 25%;
+  margin-top: 100px;
+}
+#plan section .text {
+  width: 20%;
+  margin-top: 100px;
+  font-size: 1em;
+  padding-top: 10%;
+}
+#plan section .text li {
+  margin-bottom: 10px;
+}
+#plan section .mainpic {
+  width: 50%;
+}
+#plan section .title {
+  width: 60%;
+}
+
+
+#plan section:nth-child(odd) .illust {
+  float: right;
+}
+#plan section:nth-child(odd) .text {
+  float: right;
+}
+#plan section:nth-child(odd) .mainpic {
+  float: right;
+  padding-top: 100px;
+}
+#plan section:nth-child(odd) .title {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#plan section:nth-child(even) .illust {
+  float: left;
+}
+#plan section:nth-child(even) .text {
+  float: left;
+}
+#plan section:nth-child(even) .mainpic {
+  float: left;
+  padding-top: 100px;
+}
+#plan section:nth-child(even) .title {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 /* 2 columns: 600px */
