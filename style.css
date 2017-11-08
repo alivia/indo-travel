@@ -1,7 +1,6 @@
 body{
   margin: 0;
   padding: 0;
-  font-family: "Noto Sans Japanese";
 }
 
 header{
@@ -127,19 +126,23 @@ h1.large{
   clear: both;
 }
 
-.content-text{
-  width: 40%;
+#miryoku {
+  background: none;
+}
+#miryoku .content-text{
+  width: 60%;
   margin: 30px auto;
   text-align: center;
   font-size: 1em;
 }
 
-.content-text h2{
-
+h2{
+  font-family: "Noto Sans Japanese";
+  text-align: center;
 }
 
-.content-text p{
-
+p{
+  font-family: "Noto Sans Japanese";
 }
 
 /* 1 column: 320px */
@@ -168,16 +171,20 @@ h1.large{
   padding: 0 1.25rem;
 }
 
+#map img {
+  width: 100%;
+}
 
 #plan {
-  width: 100%;
-  background-image: url('img/hip-square.png');
+  width: 90%;
+  background-image: url('img/paper.png');
+  font-family: "Noto Sans Japanese";
+  padding: 0 5%;
+  clear: both;
 }
 #plan section {
   min-height: 100px;
   overflow: hidden;
-}
-section {
   position: relative;
 }
 #plan section .illust {
@@ -199,6 +206,10 @@ section {
 #plan section .title {
   width: 60%;
 }
+#plan .myButton {
+  font-size: 0.8em;
+  margin: 0 auto;
+}
 
 
 #plan section:nth-child(odd) .illust {
@@ -214,7 +225,7 @@ section {
 #plan section:nth-child(odd) .title {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
 }
 
 #plan section:nth-child(even) .illust {
@@ -230,8 +241,10 @@ section {
 #plan section:nth-child(even) .title {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
 }
+
+
 
 /* 2 columns: 600px */
 @media only screen and (min-width: 600px) {
@@ -272,9 +285,57 @@ section {
 }
 
 @media screen and (max-width: 850px) {
-  .title {
-    font-size: 3em !important;
+  body {
   }
+  .title {
+    font-size: 4em !important;
+  }
+  .harenohi {
+    font-size: 2em !important;
+  }
+  .header-desc {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1em;
+    color: #fff;
+    text-align: center;
+    /*font-family: "Sawarabi Gothic", sans-serif;*/
+    font-family: "Noto Sans Japanese";
+    position: absolute;
+    left: 10%;
+    top: 60%;
+    letter-spacing: 0.1em;
+    line-height: 2em;
+    font-weight: lighter !important;
+  }
+  #miryoku .content-text{
+    width: 80%;
+  }
+  #plan section {
+    margin-bottom: 30px;
+  }
+  #plan section .title {
+    width: 80%;
+  }
+  #plan section .mainpic {
+    width: 100%;
+    clear: both;
+  }
+  #plan section .illust {
+    width: 30%;
+    margin-top: 0px;
+    padding-top: 0 !important;
+  }
+  #plan section .text {
+    width: 60%;
+    margin-top: 0px;
+    font-size: 1em;
+    padding-top: 0 !important;
+  }
+  #plan section .text li {
+    margin-bottom: 10px;
+  }
+
 }
 
 @media screen and (max-width: 1200px) {
